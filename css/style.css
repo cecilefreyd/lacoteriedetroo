@@ -230,13 +230,19 @@ p {
     font-size: 1rem;
 }
 
+
+
 #introduction {
     height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
-
+@media (max-width: 600px) {
+    #introduction {
+        height: auto;
+    }
 }
 
 #h2-section {
@@ -248,6 +254,11 @@ p {
     width: 50%;
 }
 
+@media (max-width: 600px) {
+    .section-text {
+        width: 80%;
+    }
+}
 
 
 #reservation {
@@ -256,6 +267,13 @@ p {
     align-items: center;
     justify-content: center;
     height: 60vh;
+}
+
+@media (max-width: 900px) {
+    .p-center {
+        width: 80vw;
+        text-align: center;
+    }
 }
 
 .section-chambre {
@@ -271,6 +289,13 @@ p {
     }
 }
 
+@media (max-width: 900px) {
+    #article-chambre-bakoua {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
 
 .section-text-chambre {
     padding-top: 60px;
@@ -280,6 +305,20 @@ p {
     justify-content: center;
     flex-direction: column;
 }
+
+@media (max-width: 900px) {
+    .section-text-chambre {
+        padding-top: 60px;
+        padding-bottom: 32px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+
+
 
 .section-prix {
     margin-top: 24px;
@@ -341,6 +380,8 @@ address {
     height: 25vh;
 
 }
+
+
 
 a {
     text-decoration: none;
