@@ -157,10 +157,12 @@ header {
 
 #logo {
     height: 120px;
-    /* padding: 16px; */
+    width: auto;
     position: absolute;
-    top: 100px;
     left: 50%;
+    margin-left: -50px;
+    top: 100px;
+    margin-top: -50px;
 }
 
 #accroche {
@@ -173,8 +175,7 @@ header {
 
 h1 {
     font-size: 3rem;
-
-
+    letter-spacing: .1rem;
 }
 
 section {
@@ -184,6 +185,13 @@ section {
 
 article {
     display: flex;
+}
+
+@media (max-width: 600px) {
+    article {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .html {
@@ -204,11 +212,14 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem
+    font-size: 3rem;
+    letter-spacing: .1rem;
 }
 
 h3 {
     font-size: 2.5rem;
+    letter-spacing: .1rem;
+
 }
 
 p {
@@ -237,6 +248,8 @@ p {
     width: 50%;
 }
 
+
+
 #reservation {
     display: flex;
     flex-direction: column;
@@ -251,6 +264,13 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 900px) {
+    .section-chambre {
+        width: 100vw;
+    }
+}
+
 
 .section-text-chambre {
     padding-top: 60px;
@@ -304,6 +324,13 @@ aside {
     height: auto;
 }
 
+@media (max-width: 900px) {
+    .image-chambre {
+        width: 100vw;
+        height: auto;
+    }
+}
+
 
 address {
     display: flex;
@@ -311,7 +338,7 @@ address {
     justify-content: space-around;
     text-align: center;
     padding: 24px;
-    height: 20vh;
+    height: 25vh;
 
 }
 
@@ -337,7 +364,21 @@ a:active {
     color: #231f20;
 }
 
+.reseau-sociaux {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
 
+.icones-rs {
+    height: 32px;
+    width: auto;
+    margin: 16px;
+    margin-top: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
 
 footer {
     width: 100vw;
