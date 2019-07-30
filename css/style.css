@@ -1,137 +1,14 @@
-* http: //meyerweb.com/eric/tools/css/reset/ 
-
-v2.0 | 20110126 License: none (public domain) */ html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
 /*style*/
+
+html {
+  --primary-darker: #314856;
+  --primary-lighter: #f7f7f7;
+
+  --main-font: 'MontSerrat', sans-serif;
+  --secondary-font: 'PlayfairDisplay', serif;
+
+  font-family: var(--main-font);
+}
 
 /*font-style*/
 
@@ -139,11 +16,11 @@ h2,
 h1,
 h3,
 .intro {
-    font-family: PlayfairDisplay;
+    /* font-family: PlayfairDisplay; */
 }
 
 p {
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
 }
 
 /*color*/
@@ -214,12 +91,33 @@ body {
     flex-direction: column;
 }
 
-span {
-    display: flex;
-}
-
 #introduction {
     width: 80%;
+    margin: 0 auto;
+}
+
+.intro-container {
+  display: flex;
+}
+
+.title {
+  font-size: 4rem;
+  font-family: var(--secondary-font);
+  color: var(--primary-darker);
+  font-weight: 900;
+}
+
+.title--small {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  margin-right: 3rem;
+}
+
+.description p:first-child {
+  margin-bottom: 1rem;
 }
 
 #chambres {
@@ -229,7 +127,17 @@ span {
 .chambre {
     display: flex;
     flex-direction: column;
+}
 
+.chambre p {
+  color: var(--primary-darker);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-prix {
+  align-self: flex-end;
+  text-align: end;
 }
 
 
@@ -243,4 +151,57 @@ address {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.header {
+  box-sizing: border-box;
+
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem;
+
+  /* background-image: url('../img/lacoteriedetroo-jardin-3.png'); */
+  background-repeat: no-repeat;
+  /* background-blend-mode: normal;
+  background-color: black; */
+  /* opacity: 0.8; */
+}
+
+#logo {
+  /* margin: 1.5rem; */
+}
+
+#accroche-part-1 {
+  color: var(--primary-darker);
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 30px;
+}
+
+#accroche-part-2 {
+  color: var(--primary-darker);
+  font-family: var(--secondary-font);
+  font-weight: 900;
+  font-size: 35px;
+}
+
+.reservation-link {
+  padding: 10px 20px;
+  background-color: var(--primary-darker);
+  opacity: 0.8;
+  color: var(--primary-lighter);
+  border: 1px solid;
+  border-color: var(--primary-lighter);
+}
+
+.reservation-link a {
+  color: #f7f7f7;
+  text-decoration: none;
+  font-family: var(--main-font);
 }
