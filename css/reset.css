@@ -1,334 +1,132 @@
-/*style*/
-
-html {
-    --primary-darker: #314856;
-    --primary-lighter: #f7f7f7;
-
-    --main-font: 'MontSerrat', sans-serif;
-    --secondary-font: 'Playfair Display', serif;
-
-    font-family: var(--main-font);
-}
-
-/*font-style*/
-
-h2,
-h1,
-h3,
-.intro {
-    /* font-family: PlayfairDisplay; */
-}
-
-p {
-    /* font-family: Montserrat; */
-}
-
-/*color*/
-
-p,
-h2,
-h1,
-h3 {
-    color: #314856;
-
-}
-
+/* http: //meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126 License: none (public domain) */ 
+html,
 body,
-.chambre {
-    background-color: #f7f7f7;
-
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-#chambres {
-    background-color: #314856;
-}
-
-/*font-size*/
-
-.intro {
-    font-size: 20px;
-}
-
-h2 {
-    font-size: 60px
-}
-
-h3 {
-    font-size: 49px;
-    line-height: 0px;
-}
-
-p {
-    line-height: 1.75;
-    font-size: 16px;
-}
-
-
-/*dimension*/
-
-#chambres {
-    justify-content: space-around;
-    padding: 40px;
-}
-
-.chambre {
-    margin: 20px;
-}
-
-
-
-/*positionnement*/
-
-
-main {
-    display: flex;
-    flex-direction: column;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    line-height: 1;
 }
 
-#introduction {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 160px;
+ol,
+ul {
+    list-style: none;
 }
 
-.intro-container {
-    display: flex;
-    margin-top: 40px;
-    margin-bottom: 160px;
+blockquote,
+q {
+    quotes: none;
 }
 
-.title {
-    font-size: 4rem;
-    /**font-family: var(--secondary-font);**/
-    /**font-family: 'PlayfairDisplay';*/
-    color: var(--primary-darker);
-    font-weight: 900;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
 
-h3 {
-    font-family: 'PlayfairDisplay';
-}
-
-.title--small {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.intro {
-    margin-right: 3rem;
-    font-size: 20px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.4;
-    font-family: var(--secondary-font);
-
-}
-
-.description {
-    font-family: var(--main-font);
-    color: var(--primary-darker);
-    font-size: 1rem;
-    font-weight: normal;
-    line-height: 1.75;
-    )
-}
-
-.description p:first-child {
-    margin-bottom: 1rem;
-}
-
-#chambres {
-    display: flex;
-}
-
-.chambre {
-    display: flex;
-    flex-direction: column;
-}
-
-.chambre p {
-    color: var(--primary-darker);
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    font-family: var(--main-font);
-    font-size: 16px;
-    line-height: 1.75;
-
-
-}
-
-.section-prix {
-    align-self: flex-end;
-    text-align: end;
-    padding: 20px;
-}
-
-.photo-chambre {
-    width: 100%;
-}
-
-.section-chambre {
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-left: 40px;
-}
-
-
-#reservation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-address {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.header {
-    box-sizing: border-box;
-
-    height: 100vh;
-    width: 100vw;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 2rem;
-
-    background-image: url('../img/lacoteriedetroo-jardin-3.png');
-    background-repeat: no-repeat;
-    /* background-blend-mode: normal;
-    background-color: black; */
-    /* opacity: 0.8; */
-}
-
-#logo {
-    /* margin: 1.5rem; */
-}
-
-#accroche-part-1 {
-    color: var(--primary-darker);
-    font-family: var(--main-font);
-    font-weight: 500;
-    font-size: 35px;
-}
-
-#accroche-part-2 {
-    color: var(--primary-darker);
-    font-family: var(--secondary-font);
-    font-weight: 900;
-    font-size: 35px;
-}
-
-.reservation-link {
-    padding: 10px 40px;
-    background-color: var(--primary-darker);
-    opacity: 0.8;
-    color: var(--primary-lighter);
-    border: 1px solid;
-    border-color: var(--primary-lighter);
-}
-
-.reservation-link a {
-    color: var(--primary-lighter);
-    text-decoration: none;
-    font-family: var(--main-font);
-}
-
-.a-partir {
-    font-family: var(--main-font);
-    font-size: 1rem;
-    color: var(--primary-darker);
-    margin-right: 8px;
-
-}
-
-.prix-valeur {
-    font-family: var(--main-font);
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: var(--primary-darker);
-}
-
-.prix-condition {
-    font-family: var(--main-font);
-    font-size: 1rem;
-    color: var(--primary-darker);
-    margin-top: 8px;
-}
-
-#reservation {
-    border: 2px solid;
-    border-color: var(--primary-darker);
-    margin: 40px;
-    padding: 40px;
-    display: flex;
-    height: 300px;
-    justify-content: space-between;
-}
-
-.title-reservation {
-    font-family: serif;
-    font-size: 60px;
-    font-weight: 900;
-}
-
-address {
-    font-family: var(--main-font);
-    font-size: 1rem;
-    color: var(--primary-darker);
-    text-decoration: none;
-
-    display: flex;
-    height: 100px;
-    justify-content: space-between;
-}
-
-
-.p-center {
-    font-family: var(--main-font);
-    font-size: 1rem;
-    color: var(--primary-darker);
-}
-
-a {
-    font-family: var(--main-font);
-
-}
-
-a:visited,
-a:active,
-a:link {
-    color: var(--primary-darker);
-    font-family: var(--main-font);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--primary-darker);
-    font-family: var(--main-font);
-    text-decoration: underline;
-}
-
-.link-reservation-site {
-    padding: 10px 20px;
-    color: var(--primary-lighter);
-    border: 1px solid;
-    border-color: var(--primary-darker);
-}
-
-.link-reservation-site:hover {
-    background-color: var(--primary-darker);
-    color: var(--primary-lighter);
-    text-decoration: none;
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
