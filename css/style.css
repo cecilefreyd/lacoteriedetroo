@@ -6,6 +6,7 @@ html {
     --black: #314856;
     --white: #f7f7f7;
     --primary-darker-opacity: rgba(3, 79, 74, .75);
+
     --main-font: 'Lato', sans-serif;
     --secondary-font: 'Gilda Display', serif;
 
@@ -180,7 +181,7 @@ body {
     padding-left: 16vw;
     padding-right: 16vw;
     padding-top: 8vh;
-    padding-bottom: 4vh;
+    padding-bottom: 8vh;
 }
 
 #introduction {
@@ -295,7 +296,7 @@ body {
 
     background-image: url('../img/illustration-feuille-green.svg');
     background-repeat: no-repeat;
-    background-position: 180% center;
+    background-position: 120% center;
 
     justify-content: space-between;
 }
