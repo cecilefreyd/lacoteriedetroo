@@ -25,6 +25,7 @@ p {
 }
 
 h2,
+h3,
 .title-chambre,
 .title-reservation,
 .prix-valeur {
@@ -296,7 +297,6 @@ body {
     background-repeat: no-repeat;
     background-position: 180% center;
 
-    height: 50vh;
     justify-content: space-between;
 }
 
@@ -314,13 +314,8 @@ body {
 .address {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 24%;
+    padding: 24px;
 
-    align-items: center;
-    font-family: var(--main-font);
-    font-size: 1.5rem;
-    font-weight: var(--main-font-weight);
 }
 
 .tel-number,
@@ -328,6 +323,13 @@ body {
 .maps {
     text-decoration: none;
     color: var(--black);
+
+    align-items: center;
+    font-family: var(--main-font);
+    font-size: 1.5rem;
+    font-weight: var(--main-font-weight);
+    text-align: center;
+    padding-bottom: 24px;
 }
 
 .tel-number:hover,
@@ -342,4 +344,11 @@ body {
 
 .address:visited {
     text-decoration: none;
+}
+
+.title-venir {
+    color: var(--black);
+    font-size: 2.5rem;
+    padding-top: 48px;
+    padding-bottom: 24px;
 }
