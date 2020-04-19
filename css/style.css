@@ -1,83 +1,45 @@
 /*style*/
 
 html {
-    --primary-darker: #314856;
-    --primary-lighter: #f7f7f7;
+    --primary-darker: #034f4a;
+    --primary-lighter: #438889;
+    --black: #314856;
+    --white: #f7f7f7;
 
-    --main-font: 'MontSerrat', sans-serif;
-    --secondary-font: 'Playfair Display', serif;
+    --main-font: 'Lato', sans-serif;
+    --secondary-font: 'Gilda Display', serif;
+
+    --secondary-font-weight: 400;
+    --main-font-weight: 300;
+
 
     font-family: var(--main-font);
+    font-size: 18px;
 }
 
 /*font-style*/
 
 h2,
-h1,
-h3,
-.intro {
-    /* font-family: PlayfairDisplay; */
-}
-
 p {
-    /* font-family: Montserrat; */
+    color: var(--white);
 }
 
-/*color*/
-
-p,
 h2,
-h1,
-h3 {
-    color: #314856;
-
+.title-reservation,
+.prix-valeur {
+    font-family: var(--secondary-font);
 }
 
-body,
-.chambre {
-    background-color: #f7f7f7;
-
-}
-
-#chambres {
-    background-color: #314856;
-}
-
-/*font-size*/
-
-.intro {
-    font-size: 20px;
-}
-
-h2 {
-    font-size: 60px
-}
-
-h3 {
-    font-size: 49px;
-    line-height: 0px;
-}
-
-p {
-    line-height: 1.75;
-    font-size: 16px;
+.description-chambre,
+.p-center,
+address,
+.a-partir,
+.prix-condition {
+    font-family: var(--main-font);
 }
 
 
-/*dimension*/
-
-#chambres {
-    justify-content: space-around;
-    padding: 40px;
-}
-
-.chambre {
-    margin: 20px;
-}
-
-
-
-/*positionnement*/
+/*main*/
 
 
 main {
@@ -90,245 +52,212 @@ body {
     flex-direction: column;
 }
 
-#introduction {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 160px;
-}
-
-.intro-container {
-    display: flex;
-    margin-top: 40px;
-    margin-bottom: 160px;
-}
-
-.title {
-    font-size: 4rem;
-    /**font-family: var(--secondary-font);**/
-    /**font-family: 'PlayfairDisplay';*/
-    color: var(--primary-darker);
-    font-weight: 900;
-}
-
-h3 {
-    font-family: 'PlayfairDisplay';
-}
-
-.title--small {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.intro {
-    margin-right: 3rem;
-    font-size: 20px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.4;
-    font-family: var(--secondary-font);
-
-}
-
-.description {
-    font-family: var(--main-font);
-    color: var(--primary-darker);
-    font-size: 1rem;
-    font-weight: normal;
-    line-height: 1.75;
-    )
-}
-
-.description p:first-child {
-    margin-bottom: 1rem;
-}
-
-#chambres {
-    display: flex;
-}
-
-.chambre {
-    display: flex;
-    flex-direction: column;
-}
-
-.chambre p {
-    color: var(--primary-darker);
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    font-family: var(--main-font);
-    font-size: 16px;
-    line-height: 1.75;
-
-
-}
-
-.section-prix {
-    align-self: flex-end;
-    text-align: end;
-    padding: 20px;
-}
-
-.photo-chambre {
-    width: 100%;
-}
-
-.section-chambre {
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-left: 40px;
-}
-
-
-#reservation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-address {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/*header*/
 
 .header {
     box-sizing: border-box;
-
-    height: 100vh;
+    height: 22vh;
     width: 100vw;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 
-    padding: 2rem;
+    background-color: var(--primary-darker);
+}
+
+/*button*/
+
+.link-reservation-site {
+    background-color: var(--primary-darker);
+    box-shadow: 0 2px 6px 0 rgba(38, 41, 43, 0.63);
+    font-family: var(--main-font);
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 300;
+
+    padding: 12px 32px 15px 32px;
+}
+
+.link-reservation-site:hover {
+    background-color: var(--primary-lighter);
+}
+
+
+
+
+/*escapade*/
+
+#escapade {
+    height: 78vh;
 
     background-image: url('../img/lacoteriedetroo-jardin-3.png');
     background-repeat: no-repeat;
-    /* background-blend-mode: normal;
-    background-color: black; */
-    /* opacity: 0.8; */
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: normal;
+    background-color: black;
 }
 
-#logo {
-    /* margin: 1.5rem; */
-}
 
 #accroche-part-1 {
     color: var(--primary-darker);
     font-family: var(--main-font);
-    font-weight: 500;
     font-size: 35px;
 }
 
 #accroche-part-2 {
     color: var(--primary-darker);
     font-family: var(--secondary-font);
-    font-weight: 900;
     font-size: 35px;
 }
 
-.reservation-link {
-    padding: 10px 40px;
+
+/*description*/
+
+#description {
     background-color: var(--primary-darker);
-    opacity: 0.8;
-    color: var(--primary-lighter);
-    border: 1px solid;
-    border-color: var(--primary-lighter);
+    height: 100%;
+    padding-left: 16vw;
+    padding-right: 16vw;
+    padding-top: 8vh;
+    padding-bottom: 4vh;
 }
 
-.reservation-link a {
-    color: var(--primary-lighter);
-    text-decoration: none;
-    font-family: var(--main-font);
+#introduction {
+    display: flex;
+    flex-direction: column;
 }
 
-.a-partir {
-    font-family: var(--main-font);
-    font-size: 1rem;
-    color: var(--primary-darker);
-    margin-right: 8px;
+.title {
+    font-size: 3.75rem;
+    font-family: var(--secondary-font);
+}
 
+.intro-container {
+    font-size: 1.375rem;
+    font-family: var(--secondary-font);
+    font-weight: var(--secondary-font-weight);
+
+    display: flex;
+
+}
+
+.intro {
+    font-size: 22px;
+    line-height: 28px;
+    padding-right: 8%;
+
+
+}
+
+.description {
+    font-family: var(--main-font);
+    font-weight: var(--main-font-weight);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/*chambres*/
+
+#chambres {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.chambre {
+    background-color: var(--white);
+    width: 30vw;
+    box-shadow: 1px 1px 12px 0 #26292b;
+}
+
+.photo-chambre {
+    width: 100%;
+    height: auto;
+}
+
+.section-chambre {
+    padding: 24px 24px 32px 40px;
+}
+
+.title title--small {
+    color: var(--black);
+}
+
+.description-chambre {
+    color: var(--black);
+    font-size: 1.125rem;
+    font-weight: var(--main-font-weight);
+}
+
+.section-prix {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .prix-valeur {
-    font-family: var(--main-font);
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: var(--primary-darker);
+    font-size: 3.75rem;
 }
 
 .prix-condition {
-    font-family: var(--main-font);
-    font-size: 1rem;
-    color: var(--primary-darker);
-    margin-top: 8px;
+    font-weight: var(--main-font-weight);
 }
 
+.a-partir {
+    font-weight: var(--main-font-weight);
+}
+
+
+/*reservation */
+
 #reservation {
-    border: 2px solid;
-    border-color: var(--primary-darker);
-    margin: 40px;
-    padding: 40px;
     display: flex;
-    height: 300px;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--white);
 }
 
 .title-reservation {
-    font-family: serif;
-    font-size: 60px;
-    font-weight: 900;
+    color: var(--black);
+    font-size: 3.75rem;
 }
-
-address {
-    font-family: var(--main-font);
-    font-size: 1rem;
-    color: var(--primary-darker);
-    text-decoration: none;
-
-    display: flex;
-    height: 100px;
-    justify-content: space-between;
-}
-
 
 .p-center {
-    font-family: var(--main-font);
-    font-size: 1rem;
-    color: var(--primary-darker);
+    color: var(--black);
+    font-size: 1.125rem;
 }
 
-a {
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: var(--main-font);
-
+    font-size: 1.5rem;
+    font-weight: var(--main-font-weight);
 }
 
-a:visited,
-a:active,
-a:link {
-    color: var(--primary-darker);
-    font-family: var(--main-font);
+.tel-number,
+.mail,
+.maps {
     text-decoration: none;
+    color: var(--black);
 }
 
-a:hover {
-    color: var(--primary-darker);
-    font-family: var(--main-font);
+.tel-number:hover,
+.mail:hover,
+.maps:hover {
     text-decoration: underline;
+    color: var(--primary-darker);
 }
 
-.link-reservation-site {
-    padding: 10px 20px;
-    color: var(--primary-lighter);
-    border: 1px solid;
-    border-color: var(--primary-darker);
-}
 
-.link-reservation-site:hover {
-    background-color: var(--primary-darker);
-    color: var(--primary-lighter);
+
+
+.address:visited {
     text-decoration: none;
 }
