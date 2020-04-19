@@ -1,0 +1,263 @@
+/*style*/
+
+html {
+    --primary-darker: #034f4a;
+    --primary-lighter: #438889;
+    --black: #314856;
+    --white: #f7f7f7;
+
+    --main-font: 'Lato', sans-serif;
+    --secondary-font: 'Gilda Display', serif;
+
+    --secondary-font-weight: 400;
+    --main-font-weight: 300;
+
+
+    font-family: var(--main-font);
+    font-size: 18px;
+}
+
+/*font-style*/
+
+h2,
+p {
+    color: var(--white);
+}
+
+h2,
+.title-reservation,
+.prix-valeur {
+    font-family: var(--secondary-font);
+}
+
+.description-chambre,
+.p-center,
+address,
+.a-partir,
+.prix-condition {
+    font-family: var(--main-font);
+}
+
+
+/*main*/
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/*header*/
+
+.header {
+    box-sizing: border-box;
+    height: 22vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--primary-darker);
+}
+
+/*button*/
+
+.link-reservation-site {
+    background-color: var(--primary-darker);
+    box-shadow: 0 2px 6px 0 rgba(38, 41, 43, 0.63);
+    font-family: var(--main-font);
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 300;
+
+    padding: 12px 32px 15px 32px;
+}
+
+.link-reservation-site:hover {
+    background-color: var(--primary-lighter);
+}
+
+
+
+
+/*escapade*/
+
+#escapade {
+    height: 78vh;
+
+    background-image: url('../img/lacoteriedetroo-jardin-3.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: normal;
+    background-color: black;
+}
+
+
+#accroche-part-1 {
+    color: var(--primary-darker);
+    font-family: var(--main-font);
+    font-size: 35px;
+}
+
+#accroche-part-2 {
+    color: var(--primary-darker);
+    font-family: var(--secondary-font);
+    font-size: 35px;
+}
+
+
+/*description*/
+
+#description {
+    background-color: var(--primary-darker);
+    height: 100%;
+    padding-left: 16vw;
+    padding-right: 16vw;
+    padding-top: 8vh;
+    padding-bottom: 4vh;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 3.75rem;
+    font-family: var(--secondary-font);
+}
+
+.intro-container {
+    font-size: 1.375rem;
+    font-family: var(--secondary-font);
+    font-weight: var(--secondary-font-weight);
+
+    display: flex;
+
+}
+
+.intro {
+    font-size: 22px;
+    line-height: 28px;
+    padding-right: 8%;
+
+
+}
+
+.description {
+    font-family: var(--main-font);
+    font-weight: var(--main-font-weight);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/*chambres*/
+
+#chambres {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.chambre {
+    background-color: var(--white);
+    width: 30vw;
+    box-shadow: 1px 1px 12px 0 #26292b;
+}
+
+.photo-chambre {
+    width: 100%;
+    height: auto;
+}
+
+.section-chambre {
+    padding: 24px 24px 32px 40px;
+}
+
+.title title--small {
+    color: var(--black);
+}
+
+.description-chambre {
+    color: var(--black);
+    font-size: 1.125rem;
+    font-weight: var(--main-font-weight);
+}
+
+.section-prix {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.prix-valeur {
+    font-size: 3.75rem;
+}
+
+.prix-condition {
+    font-weight: var(--main-font-weight);
+}
+
+.a-partir {
+    font-weight: var(--main-font-weight);
+}
+
+
+/*reservation */
+
+#reservation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--white);
+}
+
+.title-reservation {
+    color: var(--black);
+    font-size: 3.75rem;
+}
+
+.p-center {
+    color: var(--black);
+    font-size: 1.125rem;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--main-font);
+    font-size: 1.5rem;
+    font-weight: var(--main-font-weight);
+}
+
+.tel-number,
+.mail,
+.maps {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.tel-number:hover,
+.mail:hover,
+.maps:hover {
+    text-decoration: underline;
+    color: var(--primary-darker);
+}
+
+
+
+
+.address:visited {
+    text-decoration: none;
+}
