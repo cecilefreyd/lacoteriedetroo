@@ -25,6 +25,7 @@ p {
 }
 
 h2,
+.title-chambre,
 .title-reservation,
 .prix-valeur {
     font-family: var(--secondary-font);
@@ -36,6 +37,14 @@ address,
 .a-partir,
 .prix-condition {
     font-family: var(--main-font);
+}
+
+.p-center,
+.intro-container,
+.description-chambre {
+    line-height: 1.75rem;
+    font-size: 1.125rem;
+    font-weight: var(--main-font-weight);
 }
 
 
@@ -64,11 +73,15 @@ body {
     align-items: center;
 
     background-color: var(--primary-darker);
+    background-image: url('../img/illustration-little-feuille-white.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+
 }
 
 /*button*/
 
-.link-reservation-site {
+.link-reservation-site-primary-color {
     background-color: var(--primary-darker);
     box-shadow: 0 2px 6px 0 rgba(38, 41, 43, 0.63);
     font-family: var(--main-font);
@@ -100,17 +113,28 @@ body {
     background-color: black;
 }
 
+#accroche-container {
+    background-color: var(--primary-darker);
+    padding-top: 88px;
+    padding-bottom: 88px;
+    padding-left: 150px;
+    padding-right: 150px;
+
+    width: 60vw;
+
+    background-image: url('../img/signe-logo-coterie-de-troo-gold.svg');
+    background-repeat: no-repeat;
+}
+
 
 #accroche-part-1 {
-    color: var(--primary-darker);
+    color: var(--white);
     font-family: var(--main-font);
-    font-size: 35px;
 }
 
 #accroche-part-2 {
-    color: var(--primary-darker);
+    color: var(--white);
     font-family: var(--secondary-font);
-    font-size: 35px;
 }
 
 
@@ -141,13 +165,19 @@ body {
     font-weight: var(--secondary-font-weight);
 
     display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 120px;
 
 }
 
 .intro {
     font-size: 22px;
     line-height: 28px;
-    padding-right: 8%;
+
+    background-color: pink;
+
+    flex-grow: 1;
 
 
 }
@@ -156,8 +186,10 @@ body {
     font-family: var(--main-font);
     font-weight: var(--main-font-weight);
     font-weight: 300;
-    font-size: 18px;
-    line-height: 28px;
+
+    background-color: yellow;
+
+    flex-grow: 2;
 }
 
 /*chambres*/
@@ -183,14 +215,16 @@ body {
     padding: 24px 24px 32px 40px;
 }
 
-.title title--small {
+.title-chambre {
     color: var(--black);
+    font-size: 2.5rem;
+    padding-bottom: 8px;
 }
 
 .description-chambre {
     color: var(--black);
-    font-size: 1.125rem;
     font-weight: var(--main-font-weight);
+    padding-bottom: 24px;
 }
 
 .section-prix {
@@ -201,14 +235,17 @@ body {
 
 .prix-valeur {
     font-size: 3.75rem;
+    color: var(--black)
 }
 
 .prix-condition {
     font-weight: var(--main-font-weight);
+    color: var(--black)
 }
 
 .a-partir {
     font-weight: var(--main-font-weight);
+    color: var(--black)
 }
 
 
@@ -220,6 +257,14 @@ body {
     align-items: center;
 
     background-color: var(--white);
+    padding: 88px;
+
+    background-image: url('../img/illustration-feuille-green.svg');
+    background-repeat: no-repeat;
+    background-position: 180% center;
+
+    height: 50vh;
+    justify-content: space-between;
 }
 
 .title-reservation {
@@ -229,12 +274,16 @@ body {
 
 .p-center {
     color: var(--black);
-    font-size: 1.125rem;
+    text-align: center;
+    font-weight: var(--main-font-weight);
 }
 
 .address {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 24%;
+
     align-items: center;
     font-family: var(--main-font);
     font-size: 1.5rem;
