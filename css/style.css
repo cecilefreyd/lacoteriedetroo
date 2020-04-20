@@ -37,13 +37,17 @@ h3,
 .p-center,
 address,
 .a-partir,
-.prix-condition {
+.prix-condition,
+.nav-item {
     font-family: var(--main-font);
 }
 
+
+.description,
 .p-center,
 .intro-container,
-.description-chambre {
+.description-chambre,
+.nav-item {
     line-height: 1.75rem;
     font-size: 1.125rem;
     font-weight: var(--main-font-weight);
@@ -192,6 +196,7 @@ body {
 .title {
     font-size: 3.75rem;
     font-family: var(--secondary-font);
+    padding-bottom: 24px;
 }
 
 .intro-container {
@@ -209,10 +214,9 @@ body {
 .intro {
     font-size: 22px;
     line-height: 28px;
+    padding-right: 88px;
 
-    background-color: pink;
-
-    flex-grow: 1;
+    flex: 40%;
 
 
 }
@@ -222,9 +226,13 @@ body {
     font-weight: var(--main-font-weight);
     font-weight: 300;
 
-    background-color: yellow;
 
-    flex-grow: 2;
+    flex: 60%;
+}
+
+.description p:first-child {
+    margin-bottom: 24px;
+
 }
 
 /*chambres*/
@@ -296,7 +304,7 @@ body {
 
     background-image: url('../img/illustration-feuille-green.svg');
     background-repeat: no-repeat;
-    background-position: 120% center;
+    background-position: 130% center;
 
     justify-content: space-between;
 }
@@ -304,6 +312,7 @@ body {
 .title-reservation {
     color: var(--black);
     font-size: 3.75rem;
+    padding-bottom: 24px;
 }
 
 .p-center {
@@ -327,7 +336,7 @@ body {
 
     align-items: center;
     font-family: var(--main-font);
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     font-weight: var(--main-font-weight);
     text-align: center;
     padding-bottom: 24px;
@@ -340,9 +349,6 @@ body {
     color: var(--primary-darker);
 }
 
-
-
-
 .address:visited {
     text-decoration: none;
 }
@@ -352,4 +358,50 @@ body {
     font-size: 2.5rem;
     padding-top: 48px;
     padding-bottom: 24px;
+}
+
+/*footer*/
+
+#footer {
+    background-color: var(--primary-darker);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 269px;
+
+}
+
+#logo-footer {
+    padding-bottom: 8px;
+}
+
+#nav-footer {
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+}
+
+.reseau-sociaux {
+    padding-bottom: 16px;
+}
+
+.icones-rs {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.nav-item {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-item:visited,
+.nav-item:enabled {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
 }
