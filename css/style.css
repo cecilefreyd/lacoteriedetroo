@@ -84,6 +84,13 @@ body {
 
 }
 
+@media (max-width: 1056px) {
+    #logo {
+        width: 40vw;
+        height: auto;
+    }
+}
+
 /*button*/
 
 .link-primary-color {
@@ -176,6 +183,12 @@ body {
     font-size: 2.35rem;
 }
 
+@media (max-width: 1056px) {
+    #accroche-part-1 {
+        font-size: 2.25rem;
+    }
+
+}
 
 /*description*/
 
@@ -211,14 +224,20 @@ body {
 
 }
 
+@media (max-width: 1056px) {
+    .intro-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
 .intro {
-    font-size: 22px;
-    line-height: 28px;
+    font-size: 1.375rem;
+    line-height: 1.75rem;
     padding-right: 88px;
 
     flex: 40%;
-
-
 }
 
 .description {
@@ -243,10 +262,26 @@ body {
 
 }
 
+@media (max-width: 1056px) {
+    #chambres {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
 .chambre {
     background-color: var(--white);
     width: 30vw;
     box-shadow: 1px 1px 12px 0 #26292b;
+}
+
+@media (max-width: 1056px) {
+    .chambre {
+        width: 85vw;
+    }
 }
 
 .photo-chambre {
@@ -290,6 +325,11 @@ body {
     font-weight: var(--main-font-weight);
     color: var(--black)
 }
+
+
+/*media queries*/
+
+
 
 
 /*reservation */
