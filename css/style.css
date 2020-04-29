@@ -18,6 +18,7 @@ html {
     font-size: 18px;
 }
 
+
 /*font-style*/
 
 h2,
@@ -82,6 +83,12 @@ body {
     background-repeat: no-repeat;
     background-position: right top;
 
+}
+
+@media screen and (max-width: 880px) {
+    .header {
+        background-image: none;
+    }
 }
 
 @media (max-width: 880px) {
@@ -184,9 +191,7 @@ body {
 }
 
 @media screen and (max-width: 1056px) {
-    #accroche-part-1 {
-        background-color: palegreen;
-    }
+    #accroche-part-1 {}
 }
 
 
@@ -214,10 +219,19 @@ body {
     padding-bottom: 8vh;
 }
 
+@media screen and (max-width:880px) {
+    #description {
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+}
+
 #introduction {
     display: flex;
     flex-direction: column;
 }
+
+
 
 .title {
     font-size: 3.75rem;
@@ -250,6 +264,14 @@ body {
     padding-right: 88px;
 
     flex: 40%;
+}
+
+@media screen and (max-width:880px) {
+    .intro {
+        padding-right: 0;
+        margin-bottom: 4vh;
+        font-size: 1rem;
+    }
 }
 
 .description {
@@ -312,6 +334,12 @@ body {
 
 .section-chambre {
     padding: 24px 24px 32px 40px;
+}
+
+@media screen and (max-width: 1056px) {
+    .section-chambre {
+        padding: 16px 16px 16px 16px;
+    }
 }
 
 .title-chambre {
@@ -447,7 +475,7 @@ body {
 
 .photo-section {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 @media screen and (max-width: 1056px) {
@@ -506,6 +534,21 @@ body {
 
 .nav-item:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1056px) {
+    #footer {
+        height: auto;
+        padding-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 1056px) {
+    #nav-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 
