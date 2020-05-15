@@ -79,7 +79,7 @@ body {
     align-items: center;
 
     background-color: var(--primary-darker);
-    background-image: url('../img/illustration-little-feuille-white.svg');
+    background-image: url('../img/branding/illustration-little-feuille-white.svg');
     background-repeat: no-repeat;
     background-position: right top;
 
@@ -141,7 +141,7 @@ body {
 
 #escapade {
     height: 78vh;
-    background-image: linear-gradient(126deg, rgba(38, 41, 43, 0.48) 24%, rgba(35, 31, 32, 0) 62%), url(../img/facade-coterie-de-troo@2x.png);
+    background-image: linear-gradient(126deg, rgba(38, 41, 43, 0.48) 24%, rgba(35, 31, 32, 0) 62%), url(../img/photos/facade-coterie-de-troo.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -161,7 +161,7 @@ body {
     background-color: var(--primary-darker-opacity);
 
     padding: 88px 112px 88px 112px;
-    background-image: url('../img/signe-logo-coterie-de-troo-gold.svg');
+    background-image: url('../img/branding/signe-logo-coterie-de-troo-gold.svg');
     background-repeat: no-repeat;
 }
 
@@ -391,7 +391,7 @@ body {
     background-color: var(--white);
     padding: 88px;
 
-    background-image: url('../img/illustration-feuille-green.svg');
+    background-image: url('../img/branding/illustration-feuille-green.svg');
     background-repeat: no-repeat;
     background-position: 130% center;
 
