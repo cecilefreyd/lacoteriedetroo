@@ -6,6 +6,7 @@ html {
     --black: #314856;
     --white: #f7f7f7;
     --primary-darker-opacity: rgba(3, 79, 74, .75);
+    --secondary: #A87D4F;
 
     --main-font: 'Lato', sans-serif;
     --secondary-font: 'Gilda Display', serif;
@@ -310,14 +311,22 @@ body {
 
 .chambre {
     background-color: var(--white);
-    width: 30vw;
+    width: 20vw;
     box-shadow: 1px 1px 12px 0 #26292b;
 }
 
 
 @media screen and (max-width: 1056px) {
-    .chambre:first-child {
+    .chambre:first-child 
+     {
         margin-bottom: 8vh;
+    }
+}
+
+@media screen and (max-width: 1056px) {
+    .chambre:last-child 
+     {
+        margin-top: 8vh;
     }
 }
 
@@ -326,8 +335,6 @@ body {
         width: 85vw;
     }
 }
-
-
 
 .photo-chambre {
     width: 100%;
